@@ -5,17 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio :: Contato</title>
+    <title>Contato</title>
 </head>
 
-<body>
+<body>  
     <header> <img src="img/header.svg" width="100%" > </header>
-  <hr>
-      <h3>
+      <hr>
+    <h3>
         <i><a href="index.html">Principal</a></i> ::
         <i><a href="quemsou.html">Quem Sou</a></i> ::
         <i><a href="projetos.html">Projetos</a></i> ::
-        <i><a href="contato.html">Contato</a></i> ::    
+        <i><a href="contato.html">Contato</a></i> ::
+    </h3>
+    <hr>
+    <h1>Contato</h1>
+  <ul>
+        <li>Residente em Serra/ES</li>
+        <li><a href="contato.html">mvini.maciell@gmail.com</a></li>
+        <li>(27) 99951-1133</li>
+        <li><a href="https://www.linkedin.com/in/mvmaciell/">LinkedIn/mvmaciell</a></li>
+  </ul>
+  <hr>
+      <h2>Formulário de Contato</h2>
+    <form action="#" method="post">
+        <label for="nome">Nome</label> <br>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+      
+        <label for="assunto">Assunto:</label> <br>
+        <select id="assunto" name="assunto">
+            <option value="" disabled selected>Selecione o assunto...</option>
+            <option value="Sugestão">Sugestão</option>
+            <option value="Reclamação">Reclamação</option>
+            <option value="Orçamento">Orçamento</option>
+            <option value="Outros">Outros</option>
+        </select>
+        <br><br>
+
+        <label for="mensagem">Mensagem:</label> 
+        <br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+        <label for="newsletter">Deseja receber minha newsletter?</label>
+        <br><br>
+      
+        <legend>Onde me encontrou?</legend>
+        <input type="radio" id="encontrou_youtube" name="encontrou" value="youtube">
+        <label for="encontrou_youtube">YouTube</label>
+        <br>
+        <input type="radio" id="encontrou_google" name="encontrou" value="google">
+        <label for="encontrou_google">Google</label>
+        <br>
+        <input type="radio" id="encontrou_bing" name="encontrou" value="bing">
+        <label for="encontrou_bing">Bing</label>
+        <br>
+        <input type="radio" id="encontrou_outros" name="encontrou" value="outros">
+        <label for="encontrou_outros">Outros</label>
+        <br>
+        <input type="submit" value="Enviar">
+        <br><br>
+
+    </form>
+
+    <hr>   
+    <p>
+        Copyright &copy; 2023
+    </p>
+    <p>
+      <img src="img/ifes.png" alt="Ifes" height="96">
+    </p>
 </body>
 
 </html>
